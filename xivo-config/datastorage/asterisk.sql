@@ -797,7 +797,7 @@ CREATE TYPE "dialaction_event" AS ENUM ('answer',
  'outschedule',
  'qwaittime',
  'qwaitratio');
-CREATE TYPE "dialaction_category" AS ENUM ('callfilter','group','incall','queue','schedule','user');
+CREATE TYPE "dialaction_category" AS ENUM ('callfilter','group','incall','queue','schedule','user','outcall');
 CREATE TYPE "dialaction_action" AS ENUM ('none',
   'endcall:busy',
   'endcall:congestion',
