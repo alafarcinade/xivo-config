@@ -5,6 +5,8 @@ subnet #XIVO_NET4_SUBNET# netmask #XIVO_NET4_NETMASK# {
     
     option subnet-mask #XIVO_NET4_NETMASK#;
     option routers #XIVO_NET4_IP#;
+    # the domain-name-servers option must be provided for the Snom 715 to work properly
+    option domain-name-servers = #XIVO_NET4_IP#;
 
     pool {
         log(concat("[", binary-to-ascii(16, 8, ":", hardware), "] POOL VoIP"));
